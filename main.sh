@@ -6,3 +6,4 @@ read -p "Type title: " title
 read -p "Type command: " command
 echo "# $title" >> $localcheat
 echo "$command" >> $localcheat
+echo "" >> $localcheat
