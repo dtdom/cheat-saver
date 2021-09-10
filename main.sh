@@ -1,13 +1,13 @@
-#!/bin/bash
+#!/bin/sh
 
-
-if [ -z "$XDG_DATA_HOME" ]; then localcheat="$HOME/.local/share/navi/cheats/mine"; else localcheat="$XDG_DATA_HOME/navi/cheats/mine"; fi
+localcheat="/Users/david/Library/Application Support/navi/cheats/cheat"
 read -p "Type title: " title
 read -p "Type command: " command
 echo "# $title" >> $localcheat"/mine.cheat"
 echo "$command" >> $localcheat"/mine.cheat"
 echo "" >> $localcheat"/mine.cheat"
-cd $localcheat
-git add $localcheat"/mine.cheat"
+cd /Users/david/Library/Application\ Support/navi/cheats/cheat
+git pull
+git add mine.cheat
 git commit -m "$title"
 git push origin master
