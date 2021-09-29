@@ -12,3 +12,5 @@ alias note="/home/dtdom/dev/cheat-saver/main.sh"
 
 Future:
     Set option to define no snipets like entries.
+
+Update the repo path in the script, maybe set a env variable in the future
